@@ -28,7 +28,9 @@ const Card = ({ type, date, title, description, author }: Props) => {
       <time className="block text-sm text-gray-600 mb-3 font-bold">{date}</time>
 
       {/* Title */}
-      <h2 className="font-bold text-2xl text-black mb-3">{title}</h2>
+      <h2 className="font-bold text-2xl text-black mb-3 hover:text-yellow-300 transition duration-300 ease-in-out cursor-pointer">
+        {title}
+      </h2>
 
       {/* Description */}
       <p className="text-gray-500 text-sm leading-relaxed mb-4">
